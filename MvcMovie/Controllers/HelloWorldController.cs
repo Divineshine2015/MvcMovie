@@ -27,8 +27,8 @@ namespace MvcMovie.Controllers
         //}
         public ActionResult Welcome(string name, int numTimes = 1)
         {
-            ViewBag.Message = "Hello"+name;
-            ViewBag.NUmTimes = numTimes;
+            ViewBag.Message = "Hello "+name;
+            ViewBag.NumTimes = numTimes;
 
             return View();
            // return HttpUtility.HtmlEncode("Hello " + name + ", ID: " + ID);
