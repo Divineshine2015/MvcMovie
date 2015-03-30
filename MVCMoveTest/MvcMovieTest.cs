@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Xunit;
 
-namespace MvcMovie
+namespace MVCMoveTest
 {
     public class MvcMovieTest
     {
