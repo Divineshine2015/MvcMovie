@@ -12,7 +12,7 @@ namespace MvcMovie.Controllers
 {
     public class MoviesController : Controller
     {
-        private MvcMovieContext db = new MvcMovieContext();
+        public MvcMovieContext db = new MvcMovieContext();
 
         // GET: Movies
         public ActionResult Index()

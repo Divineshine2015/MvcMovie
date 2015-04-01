@@ -12,7 +12,8 @@ namespace MVCMoveTest
 {
     public class MvcMovieTest
     {
-        private MvcMovieContext db = new MvcMovieContext();
+        //MvcMovieContext db = new MvcMovieContext();
+        
         [Fact]
 
         public void SomeTest()
@@ -28,9 +29,9 @@ namespace MVCMoveTest
         //[Fact]
         //public void DontCreateDups([Bind(Include = "ID,Title,ReleaseDate,Genre,Price")] Movie movie)
         //{
-
-        //    db.Movies.Add(movie);
-        //    db.SaveChanges();
+        //    var controllerAddingNewMovie=new MoviesController();
+        //    var createdView= controllerAddingNewMovie.Create();
+            
 
 
 

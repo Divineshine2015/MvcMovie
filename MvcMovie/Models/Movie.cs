@@ -18,6 +18,12 @@ namespace MvcMovie.Models
         }
 
 
-
+        public String ImagePath
+        {
+            get
+            {
+                return "~/img/Compress_2.jpg";
+            }
+        }
     }
 }
