@@ -1,5 +1,6 @@
 namespace MvcMovie.Migrations
 {
+    using MvcMovie.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -27,6 +28,32 @@ namespace MvcMovie.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Movies.AddOrUpdate(i => i.Title, 
+                new Movie
+            {
+                Title = "Migration Test Seed",
+                ReleaseDate = DateTime.Parse("2014-1-11"),
+                Genre = "MvcMovie MigrationTest",
+                Price = 0.01M
+            },
+             new Movie
+            {
+                Title = "2 Migration Test Seed",
+                ReleaseDate = DateTime.Parse("2014-1-11"),
+                Genre = "MvcMovie MigrationTest",
+                Price = 0.01M
+            },
+
+             new Movie
+            {
+                Title = "3 Migration Test Seed",
+                ReleaseDate = DateTime.Parse("2014-1-11"),
+                Genre = "MvcMovie MigrationTest",
+                Price = 0.01M
+            }
+            
+            );
         }
     }
 }
