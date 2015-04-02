@@ -17,10 +17,7 @@ namespace MvcMovie.Models
         public string Genre { get; set; }
         public decimal Price { get; set; }
 
-        public class MovieDBContext : DbContext
-        {
-            public DbSet<Movie> Movies { get; set; }
-        }
+       
         
 
         public String ImagePath
@@ -31,4 +28,5 @@ namespace MvcMovie.Models
             }
         }
     }
+    
 }
