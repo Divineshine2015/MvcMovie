@@ -35,6 +35,7 @@ namespace MvcMovie.Migrations
                 Title = "Migration Test Seed",
                 ReleaseDate = DateTime.Parse("2014-1-11"),
                 Genre = "MvcMovie MigrationTest",
+                Rating="PG",
                 Price = 0.01M
             },
              new Movie
@@ -42,6 +43,7 @@ namespace MvcMovie.Migrations
                 Title = "2 Migration Test Seed",
                 ReleaseDate = DateTime.Parse("2014-1-11"),
                 Genre = "MvcMovie MigrationTest",
+                Rating = "PG-13",
                 Price = 0.01M
             },
 
@@ -50,6 +52,7 @@ namespace MvcMovie.Migrations
                 Title = "3 Migration Test Seed",
                 ReleaseDate = DateTime.Parse("2014-1-11"),
                 Genre = "MvcMovie MigrationTest",
+                Rating = "R",
                 Price = 0.01M
             }
             
